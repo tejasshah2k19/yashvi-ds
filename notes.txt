@@ -1,0 +1,73 @@
+search -> 
+    1) linear search 
+    2) binary search 
+
+
+
+a[] = {1,33,44,55,66,77}; 
+
+search = 60 
+Not Found 
+
+search = 66
+Found 
+
+
+linear -> 
+        1,33,44,55,66,77
+                         i
+
+
+binary -> 
+    prior condition -> your array must be sorted 
+    0 1 2 3 4 5 6 7 8 9 
+    1 2 3 4 5 6 7 8 9 10
+    min     mid        max 
+                    min 
+    search => 9 
+
+    mid = (min + max) / 2 
+          0+9 =9=4
+          6+9 =15/2 = 7 
+   if  a[mid] == sarch       
+            found 
+   else if  search > a[mid] 
+        min = mid + 1     
+   else 
+        max = mid - 1
+
+-------------------------------------------------------------------------------------
+
+
+tree -- non linear data structure 
+
+data -> node -> interconnected -> 1 node can be connected with n number of node ->forest 
+
+
+binary tree -> node -> 1 node can have max 2 node connection , that connected node is known as child node 
+            -> 1 node can have max 2 child node [ child can be => 0,1,2 ]
+
+            node who is the first node is known as root node , origin node -> root node 
+            root node
+            parent node 
+
+            algo 
+                    1) BST - binary search tree 
+                    2) AVL 
+
+            BST -> binary tree 
+                -> data > parent.data -> right 
+                -> data < parent.data -> left 
+
+
+
+        tree travel ->
+                    inOrder -> left - root - right 
+                    preOrder -> root - left - right 
+                    postOrder ->left - right - root 
+
+
+
+
+
+
